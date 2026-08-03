@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.pyc
+
+# uv / venv
+.venv/
+
+# Environment secrets — NEVER commit
+.env
+.env.local
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+
+# Docker
+docker/volumes/
+
+# Testing
+.pytest_cache/
+htmlcov/
+.coverage
+.ruff_cache/
