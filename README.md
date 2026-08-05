@@ -14,6 +14,14 @@ This project is not a demo chatbot. It is designed as a multi-tenant enterprise 
 - Hybrid semantic search with reranking
 - Streaming chat with source citations
 
+## Problem Statement
+
+Freelancers, consultants, and small teams accumulate large amounts of unstructured knowledge across contracts, project notes, client documents, and reports — but this information becomes progressively harder to search and retrieve as it grows. Generic search tools rely on exact keyword matches and fail when the phrasing of a query differs from the phrasing in the source document.
+
+This project is being built to explore how a properly engineered RAG (Retrieval-Augmented Generation) system — with semantic search, hybrid retrieval, and reranking — can let a user query their own document corpus in natural language and receive accurate, cited answers, instead of manually searching through files.
+
+While the underlying architecture (multi-tenant organizations, RBAC, provider-agnostic LLM integration) is designed to scale to enterprise use cases, the core problem it solves — "let me ask questions about my own documents and get a trustworthy answer" — is broadly useful to any individual or small team managing a growing body of documents.
+
 ## Tech Stack
 
 | Layer | Technology |
