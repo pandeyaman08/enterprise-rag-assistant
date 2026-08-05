@@ -24,6 +24,12 @@ class Settings(BaseSettings):
     API_V1_PREFIX: str = "/api/v1"
     DEBUG: bool = True
 
+    # Database
+    POSTGRES_USER: str
+    POSTGRES_PASSWORD: str
+    POSTGRES_DB: str
+    DATABASE_URL: str
+
 
 @lru_cache
 def get_settings() -> Settings:
