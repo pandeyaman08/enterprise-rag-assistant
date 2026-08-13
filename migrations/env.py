@@ -6,6 +6,8 @@ from sqlalchemy import pool
 from sqlalchemy.ext.asyncio import async_engine_from_config
 
 from app.core.config import get_settings
+from app.modules.auth.models.permission import Permission  # noqa: F401
+from app.modules.auth.models.role import Role  # noqa: F401
 
 # Import every model module here so Base.metadata knows about all tables.
 # Alembic's autogenerate compares this metadata against the live database.
