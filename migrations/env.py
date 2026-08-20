@@ -12,11 +12,17 @@ from app.modules.auth.models.role import Role  # noqa: F401
 # Import every model module here so Base.metadata knows about all tables.
 # Alembic's autogenerate compares this metadata against the live database.
 from app.modules.auth.models.user import User  # noqa: F401
+from app.modules.chat.models.chat import Chat  # noqa: F401
+from app.modules.chat.models.message import Message  # noqa: F401
+from app.modules.documents.models.chunk import Chunk  # noqa: F401
+from app.modules.documents.models.document import Document  # noqa: F401
 from app.modules.organizations.models.member import OrganizationMember  # noqa: F401
 from app.modules.organizations.models.organization import Organization  # noqa: F401
 from app.modules.organizations.models.project import Project  # noqa: F401
 from app.modules.organizations.models.workspace import Workspace  # noqa: F401
+from app.modules.providers.models.provider_config import ProviderConfig  # noqa: F401
 from app.shared.database.base import Base
+from app.shared.models.audit_log import AuditLog  # noqa: F401
 
 config = context.config
 settings = get_settings()
