@@ -2,7 +2,7 @@
 
 A production-grade enterprise knowledge platform enabling organizations to securely upload, process, index, and search documents using Retrieval-Augmented Generation (RAG).
 
-> 🚧 **Status: Under active development.** Being built incrementally following clean architecture and production-engineering practices. See [Roadmap](#roadmap) for progress.
+> 🚧 **Status: Under active development.** Being built incrementally following clean architecture and production-engineering practices. See [Development Status](#development-status) for progress.
 
 ## Overview
 
@@ -83,18 +83,22 @@ Once running, visit:
 - ✅ Dockerized development environment
 - ✅ Structured configuration via Pydantic Settings
 
-## Roadmap
+## Development Status
 
-- [x] **Day 1** — Project foundation: FastAPI bootstrap, Docker dev setup, linting/formatting
-- [ ] **Day 2** — PostgreSQL schema design, SQLAlchemy models, Alembic migrations
-- [ ] **Day 3** — Authentication & RBAC
-- [ ] **Day 4** — Multi-tenancy: Organizations, Workspaces, Projects
-- [ ] **Day 5** — Document upload & processing pipeline
-- [ ] **Day 6** — Embeddings & vector indexing (Qdrant)
-- [ ] **Day 7** — RAG retrieval: hybrid search, reranking, LLM provider abstraction
-- [ ] **Day 8** — Streaming chat, conversation history, citations, Celery jobs
-- [ ] **Day 9** — Security hardening, observability, test suite
-- [ ] **Day 10** — CI/CD, full documentation, deployment polish
+This project is being built incrementally, one module at a time, following clean architecture and production-engineering practices — each phase is fully implemented, tested, and committed before the next begins.
+
+### Completed
+- Project foundation — FastAPI bootstrap, Docker dev environment, linting/formatting pipeline (Ruff, Black)
+- Database schema — 12 normalized PostgreSQL tables via SQLAlchemy 2.x, with full Alembic migration history covering authentication/RBAC, multi-tenant organization hierarchy, document/chunk storage, chat/messaging, and audit logging
+
+### In Progress / Upcoming
+- Authentication & RBAC (JWT, refresh tokens, role-based permissions)
+- Document upload & processing pipeline
+- Embeddings & vector indexing (Qdrant)
+- RAG retrieval: hybrid search, reranking, multi-provider LLM integration
+- Streaming chat with source citations
+- Security hardening, observability, automated test suite
+- CI/CD pipeline and deployment
 
 ## License
 
